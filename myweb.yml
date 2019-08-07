@@ -10,3 +10,12 @@
     service: 
       name: apache2
       state: started
+
+  - name: install amazon
+    yum:
+      name: httpd
+      state: present
+  - name: start amazon
+    service:
+       name: httpd
+       state: started
