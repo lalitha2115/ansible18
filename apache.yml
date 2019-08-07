@@ -1,0 +1,14 @@
+---
+ - hosts: all
+   become: yes
+   tasks: 
+   - name: installing apache
+     ping:
+
+   - name: apache2
+     apt:
+       name: start apache
+       state: present
+
+
+    
