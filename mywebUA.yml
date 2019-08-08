@@ -1,5 +1,5 @@
 ---
-- hosts: webservers
+- hosts: all
   become: yes
   tasks:
   - name: install webserver on ubuntu16
@@ -19,6 +19,7 @@
       name: "{{ webserveronamazon }}"
       state: present
     when: ansible_os_family =="RedHat"
+
   - name: start webserver on amazon
     service:
       name: "{{ webserveronamazon }}"
