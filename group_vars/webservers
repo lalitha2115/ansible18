@@ -1,6 +1,6 @@
 key: value
 
-webserveronUbuntu: apache2
+webserveronubuntu: apache2
 webserveronamazon: httpd
 
 
